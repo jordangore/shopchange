@@ -1,9 +1,13 @@
-i = 0
-while i<10:
+def shopchange():
     price=float(input("Hello! Please enter price:"))
     tender=float(input("Hello! Please enter amount tendered:"))
     print(round(tender-(price*1.07,2)))
-    i+=1
-print("Thank you!")
-input()
+    end=input('Thank you!\n type "exit" to quit, or press enter to continue')
+    if end.lower() == "exit":
+        exit()
 
+def main():
+    while True:
+        shopchange()
+
+main()
